@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+# skripti algus
+# 
+echo "Alex Egert Tibbin"
+echo "ISP117"
+echo "Anted aine on opitav ning lobus"
+echo "Praegu arvan, et olen heas seisus ning proovin jatkata samamoodi"
+#
+# skripti lopp
