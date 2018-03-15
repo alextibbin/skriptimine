@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+#tervitusskript2
+#
+echo "Alex Egert Tibbin" 
+echo "ISP117"
+echo "Antud aine on opitav ning lobus"
+echo "Praegu arvan, et olen heas seisus ning jatkan samamoodi"
+#
+# skripti lopp
