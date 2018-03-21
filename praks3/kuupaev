@@ -3,7 +3,7 @@
 # kuupaev ja kell
 #
 date +"%A, %B %d, %Y" # valjastab paeva, kuupaeva ning aasta
-date +"%H:%M"
+date +"%H:%M" # valjastab kellaja 
 cal # valjastab selle kuu kalendri
 #
 # skripti lopp 
