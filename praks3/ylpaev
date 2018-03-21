@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+# masina tooaeg
+#
+uptime -p # valjastab kui kaua masin on toodanud 
+#
+# skripti lopp
+
