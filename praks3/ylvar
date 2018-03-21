@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+# sorteerimine
+#
+find /var -type f -name "*.log" 2> /dev/null | sort -n -r # valjastab .log lopuga failid suuruse jarjekorras
+#
+# skripti lopp
+
