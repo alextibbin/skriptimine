@@ -2,7 +2,7 @@
 #
 # masina tooaeg
 #
-date +"%T"
+date +"%T" # valjastab aja tundides,minutites ja sekundites
 uptime -p # valjastab kui kaua masin on toodanud 
 #
 # skripti lopp
