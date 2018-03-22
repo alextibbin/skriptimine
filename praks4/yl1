@@ -1,7 +1,6 @@
 #!/bin/bash
 #
-echo -n "Sisesta oma ees- ja perenimi:"
-read eesnimi perenimi
-echo "Sinu eesnimi on $eesnimi ja perenimi on $perenimi"
-#
-# skripti lopp
+echo -n "Sisesta oma ees- ja perenimi:" # valjastab jutumarkides kirjutatud teksti
+read eesnimi perenimi # laseb kirjutada midagi , mis on seotud jutumargi sisuga
+echo "Sinu eesnimi on $eesnimi ja perenimi on $perenimi" # valjastab sisestatud nimed
+echo  "Tere, $eesnimi $perenimi" # valjastab antud sisu sinu sisestatud nimega
