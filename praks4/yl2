@@ -21,8 +21,8 @@ echo "Sisesta tordi kihtide arv"
 read k_arv
 #
 # Kandiku pindala
-pindala=`expr $pikkus \* $laius`
+pindala=`expr $pikkus \* $laius` # arvutab antud koguse
 # Kupsiste arv
 kkogus=`expr $kogus \* $mitu`
-echo "Kandiku pindala on $pindala ja kupsiste arv on $kkogus" 
+echo "Kandiku pindala on $pindala ja kupsiste arv on $kkogus" # valjastab otsitud tulemused 
 
