@@ -1,0 +1,28 @@
+#!/bin/bash
+#
+# tordi andmed
+#
+echo "Sisesta kandiku pikkus (cm)"
+read pikkus
+
+echo "Sisesta kandiku laius (cm)"
+read laius
+
+echo "Sisesta kupsise suurus (cm)"
+read suurus
+
+echo "Sisesta kupsise arv pakis"
+read kogus
+
+echo "Sisesta kupsise paki arv"
+read mitu
+
+echo "Sisesta tordi kihtide arv"
+read k_arv
+#
+# Kandiku pindala
+pindala=`expr $pikkus \* $laius`
+# Kupsiste arv
+kkogus=`expr $kogus \* $mitu`
+echo "Kandiku pindala on $pindala ja kupsiste arv on $kkogus" 
+
