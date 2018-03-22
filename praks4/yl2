@@ -9,7 +9,10 @@ echo "Sisesta kandiku laius (cm)"
 read laius
 
 echo "Sisesta kupsise suurus (cm)"
-read suurus
+read ky_suurus
+
+echo "Sisesta kupsise laius (cm)"
+read ky_laius
 
 echo "Sisesta kupsise arv pakis"
 read kogus
@@ -24,5 +27,7 @@ read k_arv
 pindala=`expr $pikkus \* $laius` # arvutab antud koguse
 # Kupsiste arv
 kkogus=`expr $kogus \* $mitu`
-echo "Kandiku pindala on $pindala ja kupsiste arv on $kkogus" # valjastab otsitud tulemused 
+# Kupsise kindala
+ky_pindala=`expr $ky_suurus \* $ky_laius`
+echo "Kandiku pindala on $pindala, Kypsise pindala on $ky_pindala ja kupsiste arv on $kkogus" # valjastab otsitud tulemused 
 
