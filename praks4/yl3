@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+# ekskursioon
+echo "Mitu reisijat on grupis"
+read arv
+
+echo "Mitu kohta on bussis"
+read koht
+
+# Mitu reisijat on bussi taidetud
+bussis=`expr $arv` # arvutab mitu reisijat on bussi taitnud
+
+# Mitu reisijat on bussist maja jaanud
+bussist=`expr $arv - $koht` # arvutab bussist maja jaanud reisijad
+
+echo "Bussis on $bussis reisijaid ning bussist jai maha $bussist reisijaid"
+#
+# skripti lopp
