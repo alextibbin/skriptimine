@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+# kuupaevade arvutamine
+#
+# skripti algus
+#
+echo "pyhapaev - 0, esmaspaev - 1, ..., laupaev - 6"
+
+echo -n "Sisesta millal soidad ara: "
+read a
+
+echo -n "Sisesta reisi oopaevade arv: "
+read oo
+#
+# arvutamine
+T=`echo "$a*$oo/5" | bc` # arvutab tagasituleku paeva
+
+echo "Tagasi olete paeval number $T " # valjastab kirjutatud teksti ja saadud numbri arvutusest
+
+
