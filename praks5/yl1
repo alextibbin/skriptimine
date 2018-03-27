@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+# taisnurkse kolmnurga vaartused
+#
+# skripti algus
+#
+echo -n "Sisesta a kulje vaartus:"
+read a
+echo -n "Sisesta b kulje vaartus:"
+read b
+#
+# arvutamine
+#
+a_ruut=$(($a**2)) # a ruudus
+b_ruut=$(($b**2)) # b ruudus
+c_ruut=$(($a_ruut+$b_ruut)) # c ruudus on a ruudu ja b ruudu summa
+c=`echo "scale=2;sqrt($c_ruut)" | bc` # bc arvutab ruutjuurt
+echo "c=$c"
+#
+# skripti lopp 
