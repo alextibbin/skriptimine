@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+# kolmnurga pindala
+#
+# skripti algus
+#
+echo -n "Sisesta a kulje vaartus:"
+read a
+
+echo -n "Sisesta b kulje vaartus:"
+read b
+
+echo -n "Sisesta c kulje vaartus:"
+read c
+#
+# arvutamine
+# 
+P=`echo "scale=2;($a+$b+$c)/2" | bc` # arvutab umbermoodu
+S=`echo "scale=2;sqrt ($P*($P-$a)*($P-$b)*($P-$c))" | bc` # arvutab pindala
+echo "Pindala=$S"
+#
+# skripti lopp
