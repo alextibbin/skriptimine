@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+# paaris voi paaritu arv
+#
+echo -n "Sisesta suvaline taisarv: "
+read arv
+# arvutame jaak 2-ga jagamisel
+jaak=$(( $arv % 2 )) # arvutatakse pakutud arvu 2-ga
+# 4 % 2 => 0 -> siis arv on paaris # jaagid mis jagamisel on 0, need on paaris 
+# 5 % 2 => 1 -> siis arv on paaritu # jaagid mis jagamisel on 1, need on paaritud
+if [ $jaak -eq 0 ]
+then
+echo "$arv on paaris"
+else
+echo "$arv on paaritu" # valjastab jutumarkides kirjutatud teksti
+fi
+# skripti lopp 
