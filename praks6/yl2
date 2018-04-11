@@ -1,0 +1,24 @@
+#!/bin/bash
+#
+# reisijad bussis
+#
+echo -n "Sisesta reisijate arv: " # valjastab jutumarkides oleva teksti
+read reisijad 
+echo -n "Sisesta kohtade arv bussis: "
+read kohad 
+#
+# arvutamine
+# 
+bussid=$(($reisijad / $kohad)) # jagab reisijate ja kohtade arvu
+ylejaanud=$(($reisijad % $kohad)) 
+if test $ylejaanud -gt 0
+then
+
+         bussid=$(($bussid + 1)) # busside arvule liidetakse yks juurde
+
+fi
+# busside arv vaja
+#
+echo "Kokku on vaja $bussid taisbussi"
+#
+# skripti lopp
