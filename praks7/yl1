@@ -1,0 +1,27 @@
+#!/bin/bash
+#
+# skripti algus
+# 
+echo -n "Sisesta (oma) vanus: " # valjastab jutumarkides sisestatud teksti
+read vanus # skripti aktiveerimisel saab sisestada midagi
+if test $vanus -gt 0 -a $vanus -lt 11 # 0-11 arvud loetaks, et loled laps
+then
+      echo "Oled laps" # valjastab 0-11 arvudel jutumarkides oleva teksti
+
+elif test $vanus -ge 11 -a $vanus -lt 18
+then
+      echo "Oled Nooruk"
+
+elif test $vanus -ge 18 -a $vanus -lt 63
+then
+      echo "Oled taiskasvanu"
+
+elif test $vanus -ge 63 # vanused ule 63 on koik senioorid 
+then
+      echo "Oled senioor"
+
+else # lisab midagi juurde (kui midagi muud sisestad, naiteks vigased numbrid, siis tuleb jutumarkides olev tekst vastu
+      echo "Vigane sisend"
+fi
+#
+# skripti lopp
