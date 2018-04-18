@@ -5,11 +5,11 @@
 echo -n "Siseta kuu number: "
 read kuu
 
-if [[ $kuu -ge 1 ]] && [[ $kuu -le 2 ]]  
+if [[ $kuu -ge 1 ]] && [[ $kuu -le 2 ]] # arvestab numbrid 1-2 
 then
-      echo "Praegu on Talv"
+      echo "Praegu on Talv" # valjastab vastuse (kui on 1-2 siis on talv jne)
 
-elif [[ $kuu -ge 3 ]] && [[ $kuu -le 5 ]] 
+elif [[ $kuu -ge 3 ]] && [[ $kuu -le 5 ]]
 then
       echo "Praegu on kevad"
 
