@@ -1,0 +1,28 @@
+#!/bin/bash
+#
+# oopaevad koos useri nimega
+#
+echo -n "Sisesta oma nimi: "
+read user # laseb sisestada kasutaja nime
+
+echo -n "Sisestage kellaaeg: "
+read aeg
+
+if [ $aeg -ge 6 -a $aeg -le 12 ] #kell on 6-12
+then
+      echo "Tere hommikust $user!" # valjastab echos antud sisu kuna kell vastab toele
+
+elif [ $aeg -ge 12 -a $aeg -le 18 ] # kell on 12-18
+then
+      echo "Tere paevast $user!"
+
+elif [ $aeh -ge 18 -a $aeg -le 22 ] # kell on 18-22
+then
+      echo "Tere ohtust $user!"
+
+elif [ $aeg -ge 0 -a $aeg -le 5 ]
+then
+      echo "Head ood $user!"
+
+fi
+# skripti lopp
