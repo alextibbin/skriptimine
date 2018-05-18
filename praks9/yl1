@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+# skripti algus 
+# 
+
+for i in 1 2 3 4 5 # valjastab igas need kirjutatud numbrid
+
+do
+
+   echo "$i. *****" # peale neid numbreid valjastab *****
+
+done
