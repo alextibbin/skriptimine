@@ -1,0 +1,24 @@
+#!/bin/bash
+#
+# skripti algus
+# 
+echo -n "Sisesta ridade arv: "
+read rida
+
+echo -n "Sisesta tarnide arv: " # laseb lisada mitu tarni tahad
+read tarn
+
+for (( i = 1; i <= rida; i++ ))
+do
+
+echo -n "$i "
+for (( j = 1; j <= tarn; j++ ))
+do
+
+echo -n "*" # valjastab reas olevad sumbolid tarnides
+done
+
+echo ""
+done
+#
+# skripti lopp
