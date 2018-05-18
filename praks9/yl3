@@ -1,0 +1,32 @@
+#!/bin/bash
+#
+# skripti algus
+#
+echo -n "Sisesta ridade arv: "
+read rida
+
+echo -n "Sisesta tarnide arv: "
+read tarn
+
+  for ((i = 1; i <= $rida; i++)) # genereerib rea numbri
+  do
+  echo -n "$1 "
+  if [ $i -eq 1 -o $i -eq $rida ]; then
+  for((j = 1; j <= $tarn; j++))
+do
+  echo -n "* "
+done
+
+else
+  echo -n "* "
+
+  for((j = 2; j < $tarn; j++))
+  do
+     echo -n " "
+  done
+  echo -n "* "
+ fi
+ echo
+done
+
+# skripti lopp
