@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+# skripti algus
+#
+echo -n "Sisestage ridade arv: "
+read rida
+
+for (( r=1; r<=rida; r++ ))
+do
+echo -n "$r. "
+ for (( v=1; v<=($rida-$r); v++ ))
+ do
+  echo -n "o " # valjastab o tahe sumbolina
+ done
+ for (( v=1; v<=$r; v++ ))
+ do
+  echo -n "* "
+ done
+ echo
+done
+# skripti lopp
