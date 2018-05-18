@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+# skripti algus
+#
+echo -n "Sisesta ridade arv: "
+read rida
+
+for (( r=1; r<rida; r++ ))
+do
+  echo -n "$r. "
+  for (( v=1; v<=$r; v++ ))
+  do
+   echo -n "* " # joonistab tarni
+  done
+  echo ""
+  done
+# skripti lopp
+
